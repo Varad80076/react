@@ -13,6 +13,6 @@ function MyAPP(){
 }
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-    <App/>
+    <App/>,
    MyAPP()
 )
