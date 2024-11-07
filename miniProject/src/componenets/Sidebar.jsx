@@ -12,7 +12,7 @@ import { Link } from "react-router-dom";
 function Sidebar() {
   return (
     // image
-    <div className="bg-gray-700 text-white w-full sticky right-0 flex sm:flex-col sm:w-72 h-fit sm:h-[663px]">
+    <div className="bg-gray-700 text-white w-full sticky right-0 flex sm:flex-col sm:w-72 h-fit sm:h-[663px] rounded-xl">
       <figure className="mt-10 mx-2 hidden sm:block">
         <img
           src="https://images.unsplash.com/photo-1727162334294-170987f6b31b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwzfHx8ZW58MHx8fHx8"
@@ -64,7 +64,7 @@ function Sidebar() {
         </li>
         <li className="mb-2">
           <Link className="btn  rounded-xl text-white hover:border-gray-500 text-xs bg-gray-800 sm:text-base"
-to="/resume"          
+to="/doc"          
           >
             <FontAwesomeIcon icon={faFile} /> Resume
           </Link>

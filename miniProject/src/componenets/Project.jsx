@@ -2,7 +2,7 @@ import React from 'react'
 
 function About() {
   return (
-    <section className="bg-black py-12 px-6" id="about">
+    <section className="bg-black py-12 px-6 rounded-lg" id="about">
       <div className="max-w-6xl mx-auto animate-zoomIn">
         {/* Heading Section */}
         <h2 className="text-5xl font-bold text-center mb-8 text-neon-green text-shadow-neon transition duration-300 ease-in-out transform hover:scale-105 hover:shadow-xl">
