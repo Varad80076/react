@@ -26,8 +26,6 @@ const Projects = () => {
       ? projects
       : projects.filter((project) => project.category === activeCategory);
 
-  
-      
   return (
     <article className="portfolio w-full py-2" id="portfolio">
       <header className="mb-8">
@@ -68,11 +66,9 @@ const Projects = () => {
             <div
               key={project.id}
               className="project-item rounded-xl overflow-hidden  duration-300 "
-              
             >
               <a href="#" className="block ">
                 <figure className="project-img  relative hover:scale-110 transition-transform duration-100 ">
-                
                   <div className="absolute inset-0 flex items-center justify-center rounded-xl  bg-black bg-opacity-50 opacity-0 hover:opacity-100 transition-opacity duration-300 ">
                     <ion-icon
                       name="eye-outline"
@@ -85,7 +81,6 @@ const Projects = () => {
                     alt={project.title}
                     loading="lazy"
                     className="w-fit rounded-xl h-48 object-cover  text-white"
-                    
                   />
                   </div>
                   

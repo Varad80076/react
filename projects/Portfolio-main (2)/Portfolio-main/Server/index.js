@@ -2,7 +2,8 @@ const express = require('express');
 const cors = require('cors');
 const connectDB = require('./db/connection');
 const contact = require('./models/Contact');
-require('dotenv').config();
+
+
 const app = express();
 const PORT = 4000;
 
@@ -12,7 +13,7 @@ app.use(cors({
         // "https://portfolio-varad-theta.vercel.app/contact",
         // "https://portfolio-varad-theta.vercel.app",
         // "https://portfolio-varad-4ib9ud8fa.vercel.app",
-        process.env.FRONTEND_API_KEY,
+        process.env.FRONTEND_API_KEY
     ],
     methods: ['GET', 'POST'],
     allowedHeaders: 'Content-Type,Authorization',
