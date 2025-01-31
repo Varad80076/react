@@ -9,10 +9,10 @@ const PORT = 4000;
 app.use(express.json());
 app.use(cors({
     origin: [
-        "https://portfolio-varad-theta.vercel.app/contact",
-        "https://portfolio-varad-theta.vercel.app",
-        "https://portfolio-varad-4ib9ud8fa.vercel.app",
-        process.env.FRONTEND_API_KEY
+        // "https://portfolio-varad-theta.vercel.app/contact",
+        // "https://portfolio-varad-theta.vercel.app",
+        // "https://portfolio-varad-4ib9ud8fa.vercel.app",
+        process.env.FRONTEND_API_KEY,
     ],
     methods: ['GET', 'POST'],
     allowedHeaders: 'Content-Type,Authorization',
