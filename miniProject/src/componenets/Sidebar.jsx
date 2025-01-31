@@ -9,28 +9,31 @@ import {
   faUser,
 } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
+import PersonalInfo from "./PersonalInfo";
+
 function Sidebar() {
   return (
     // image
-    <div className="bg-gray-700 text-white w-full sticky right-0 flex sm:flex-col sm:w-72 h-fit sm:h-[663px] rounded-xl">
-      <figure className="mt-10 mx-2 hidden sm:block">
+    <div className="bg-[#1e1e1f] text-white w-full sticky right-0 flex sm:flex-col sm:w-72 h-fit sm:h-[663px] rounded-xl border-[#3c3c3c] border-1">
+      <figure className="bg-[#333333] mt-10 mx-5 bg-red  w-[155px] h-[155px] hidden sm:block rounded-3xl">
         <img
-          src="https://images.unsplash.com/photo-1727162334294-170987f6b31b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwzfHx8ZW58MHx8fHx8"
-          alt=""
+          src="/src/assets/my-avatar.png"
+          alt="My Avatar"
         />
       </figure>
       {/* toggle button */}
 
-      <div className="w-full sm:hidden">
+      <div className="rleative right-0 w-full sm:hidden">
         <NavBar />
       </div>
       {/* toggle button end */}
-      <h2 className="my-3 sm:my-5 ml-3 text-xs sm:text-xl justify-center items-center sm:mx-0 hidden sm:block">
+      <h2 className="my-3 sm:my-3 ml-3 text-sm sm:text-2xl justify-center items-center sm:mx-0 hidden sm:block">
         Varad Badgujar
       </h2>
-      <hr className="sm:block" />
-
-      <ul className=" mx-2 my-3 sm:my-11 flex sm:flex-col gap-1 sm:gap-0 hidden sm:block">
+      <div className="bg-[#2b2b2c] mb-4 ml-5 relative left-12 w-fit px-2 h-5 text-sm rounded-[5px] hidden sm:block">Web Developer</div>
+      <div className="bg-[#504f4f] ml-8 w-48 h-[1px] hidden sm:block"></div>
+      <div className="hidden sm:block"><PersonalInfo /></div>
+      {/* <ul className=" mx-2 my-3 sm:my-11 flex sm:flex-col gap-1 sm:gap-0 hidden sm:block">
         <li className="mb-2">
           <Link
             className="btn text-white hover:border-gray-500 bg-gray-800 shadow-2xl  rounded-xl  text-xs sm:text-base"
@@ -69,7 +72,7 @@ to="/doc"
             <FontAwesomeIcon icon={faFile} /> Resume
           </Link>
         </li>
-      </ul>
+      </ul> */}
     </div>
   );
 }
